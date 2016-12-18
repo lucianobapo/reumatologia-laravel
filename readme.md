@@ -9,6 +9,8 @@
 
 ssh 104.197.251.61
 
+cd code/reumatologia-laravel && git pull && exit
+
 rsync -rvztPhe ssh /home/luciano/code/reumatologia-laravel/.env.prod 104.197.251.61:code/reumatologia-laravel/.env
 
 ## About Laravel

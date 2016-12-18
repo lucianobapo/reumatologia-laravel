@@ -15,6 +15,14 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/institucional', ['as'=>'institucional', function () {
+    return view('institucional');
+}]);
+
+Route::get('/home', ['as'=>'home', function () {
+    return view('home');
+}]);
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+//Route::get('/home', 'HomeController@index');
