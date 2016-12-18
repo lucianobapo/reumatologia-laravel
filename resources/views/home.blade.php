@@ -3,22 +3,22 @@
 @section('content')
     <style>
         body {
-            padding: 20px;
-            font-family: 'Open Sans', sans-serif;
-            background-color: #f7f7f7;
+            /*padding: 20px;*/
+            /*font-family: 'Open Sans', sans-serif;*/
+            /*background-color: #f7f7f7;*/
         }
 
         .lib-panel {
-            margin-bottom: 20Px;
+            /*margin-bottom: 20Px;*/
         }
         .lib-panel img {
-            width: 100%;
-            background-color: transparent;
+            /*width: 100%;*/
+            /*background-color: transparent;*/
         }
 
         .lib-panel .row,
         .lib-panel .col-md-6 {
-            padding: 0;
+            /*padding: 0;*/
             /*background-color: #FFFFFF;*/
         }
 
@@ -92,11 +92,11 @@
             <div class="lib-panel">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-rounded" src="/img/content1.jpg">
+                        <img class="img-rounded img-responsive" src="/img/content1.jpg">
                     </div>
                     <div class="col-md-6">
                         <div class="lib-row lib-header">
-                            <p><a href="{{  url('/home')  }}">SOBRE A SOCIEDADE PAULISTA DE REUMATOLOGIA</a></p>
+                            <p>SOBRE A SOCIEDADE PAULISTA DE REUMATOLOGIA</p>
                             <p>Muito mais do que uma sociedade</p>
 
                             <div class="lib-header-seperator"></div>
@@ -137,11 +137,11 @@
             <div class="lib-panel">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-rounded" src="/img/content2.jpg">
+                        <img class="img-rounded img-responsive" src="/img/content2.jpg">
                     </div>
                     <div class="col-md-6">
                         <div class="lib-row lib-header">
-                            <p><a href="{{  url('/home')  }}">ÁREA EXCLUSIVA PARA MEMBROS ASSOCIADOS</a></p>
+                            <p>ÁREA EXCLUSIVA PARA MEMBROS ASSOCIADOS</p>
                             <p>Tenha acesso a conteúdos exclusivos</p>
 
                             <div class="lib-header-seperator"></div>
