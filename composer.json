@@ -9,6 +9,7 @@
         "php": ">=5.6.4",
         "ilhanet/erpnet-models": "dev-master",
         "ilhanet/erpnet-migrates": "dev-master",
+        "ilhanet/erpnet-widget-resource": "dev-master",
         "laravel/framework": "5.3.*"
     },
     "require-dev": {
