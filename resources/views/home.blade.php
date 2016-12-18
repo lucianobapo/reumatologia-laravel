@@ -68,6 +68,18 @@
     </style>
 <div class="container">
 
+    <div class="row row-margin-bottom">
+        <div class="col-md-12 text-center">
+            <h1>Sociedade Paulista de Reumatologia</h1>
+            <h2>BEM VINDO AO NOVO SITE</h2>
+            <h3>Um novo caminho se inicia. Associe-se Agora.</h3>
+        </div>
+        <div class="col-md-12 text-center">
+            <button type="button" class="btn btn-primary">ASSOCIE-SE</button>
+            <button type="button" class="btn btn-secondary">ENCONTRE UM REUMATOLOGISTA</button>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-4">
             <p><a href="{{  url('/home')  }}">SÓCIO</a></p>

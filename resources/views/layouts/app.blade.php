@@ -44,18 +44,21 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ route('home') }}">INICIO</a></li>
-                        <li><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>
-                        <li><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>
-                        <li><a href="{{ url('/home') }}">REVISTAS</a></li>
-                        <li><a href="{{ url('/home') }}">GUIDELINE DE DOENÇAS</a></li>
-                        <li><a href="{{ url('/home') }}">EVENTOS</a></li>
-                        <li><a href="{{ url('/home') }}">FORUM</a></li>
-                        <li><a href="{{ url('/home') }}">CONTATO</a></li>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
+
+                        <li class="dropdown"><a href="{{ route('home') }}">INICIO</a></li>
+                        <li class="dropdown"><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">REVISTAS</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">GUIDELINE DE DOENÇAS</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">EVENTOS</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">FORUM</a></li>
+                        <li class="dropdown"><a href="{{ url('/home') }}">CONTATO</a></li>
+
                         <!-- Authentication Links -->
                         @if (Auth::guest())
                             {{--<li><a href="{{ url('/login') }}">Login</a></li>--}}
@@ -87,6 +90,21 @@
         </nav>
 
         @yield('content')
+
+        <div class="container-fluid well">
+            <div class="row row-margin-bottom">
+                <div class="col-md-4">
+                    <h3>SPR NAS REDES SOCIAIS</h3>
+                    <h4>Facebook</h4>
+                    <h4>Twitter</h4>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="/img/banner.gif" class="img-responsive img-rounded">
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->

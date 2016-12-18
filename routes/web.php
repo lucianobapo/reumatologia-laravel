@@ -23,6 +23,8 @@ Route::get('/home', ['as'=>'home', function () {
     return view('home');
 }]);
 
+Route::resource('/post', '\ErpNET\Models\v1\Controllers\PostController');
+
 Auth::routes();
 
 //Route::get('/home', 'HomeController@index');

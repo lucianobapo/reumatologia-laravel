@@ -4,8 +4,11 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.6.4",
+        "ilhanet/erpnet-models": "dev-master",
+        "ilhanet/erpnet-migrates": "dev-master",
         "laravel/framework": "5.3.*"
     },
     "require-dev": {
