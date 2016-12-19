@@ -11,13 +11,16 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    {{--<link href="/css/app.css" rel="stylesheet">--}}
+    <link href="/css/app.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     {{--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--}}
     {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">--}}
+    {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>--}}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
+    {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--}}
 
     <!-- Scripts -->
     <script>
@@ -27,17 +30,103 @@
     </script>
     <style>
 
-        .lib-panel .lib-row {
+        .lib-row {
             padding: 0 20px 0 20px;
         }
 
-        .lib-panel .lib-row.lib-header .lib-header-seperator {
+        .lib-header-seperator {
             height: 2px;
             width: 26px;
             background-color: #d9d9d9;
             margin: 7px 0 7px 0;
         }
 
+        .circle {
+            margin: 15px;
+            display: inline-block;
+            padding: 16px;
+            text-align: center;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 2px solid #1d2087;
+        }
+
+        .circle::before,
+        .circle::after {
+            position: absolute;
+            z-index: -1;
+            display: block;
+            content: '';
+        }
+        .circle,
+        .circle::before,
+        .circle::after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+        }
+
+        .circle {
+            position: relative;
+            z-index: 2;
+            background-color: #fff;
+            border: 2px solid #5c5eae;
+            color: #5c5eae;
+            line-height: 50px;
+            overflow: hidden;
+        }
+
+        .circle:hover {
+            color: #fff;
+        }
+        .circle::after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+        }
+        .circle:hover::after {
+            background: #5c5eae;
+            border-radius: 50%;
+            -webkit-transform: scale(.9);
+            transform: scale(.9);
+        }
+
+        .circle1 {
+            opacity: 0.4;
+        }
+
+        .circle2 {
+            opacity: 0.6;
+        }
+
+        .circle3 {
+            opacity: 0.8;
+        }
+
+        .circle a {
+            text-decoration: none;
+            color: #1d2087;
+        }
+
+        .circle h2 {
+            font-size: 60px;
+        }
+
+        .circle h2 small {
+            color: #1d2087;
+        }
+
+        .circle p {
+            font-size: 24px;
+            line-height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -128,8 +217,8 @@
     </div>
 
     <!-- Scripts -->
-    {{--<script src="/js/app.js"></script>--}}
+    <script src="/js/app.js"></script>
     {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--}}
-    {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>--}}
+
 </body>
 </html>

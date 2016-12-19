@@ -13,7 +13,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12 no-padding lib-item">
+        <div class="col-md-12 lib-item">
             <div class="lib-panel">
                 <div class="row">
                     <div class="col-md-6">
