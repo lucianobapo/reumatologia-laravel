@@ -154,18 +154,24 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         @foreach(app(\ErpNET\Models\v1\Repositories\PageRepositoryEloquent::class)->all() as $item)
-                            @if($item->ordem>0)
+                            @if($item->rota=='eventos')
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                        {{ $item->nome }} <span class="caret"></span>
+                                    </a>
+
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="{{ route('pages.era') }}">ERA</a></li>
+                                        <li><a href="{{ route('pages.forum') }}">Forum de debates</a></li>
+                                        <li><a href="{{ route('pages.curso') }}">Curso de Revisão para Reumatologistas</a></li>
+                                        <li><a href="{{ route('pages.calendario') }}">Calendário de eventos</a></li>
+                                    </ul>
+                                </li>
+
+                            @elseif($item->ordem>0)
                                 <li class="dropdown"><a href="{{ route('pages.'.$item->rota) }}">{{ $item->nome }}</a></li>
                             @endif
                         @endforeach
-{{--                        <li class="dropdown"><a href="{{ route('home') }}">INICIO</a></li>--}}
-{{--                        <li class="dropdown"><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>--}}
-{{--                        <li class="dropdown"><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>--}}
-                        {{--<li class="dropdown"><a href="{{ url('/home') }}">REVISTAS</a></li>--}}
-                        {{--<li class="dropdown"><a href="{{ url('/home') }}">GUIDELINE DE DOENÇAS</a></li>--}}
-                        {{--<li class="dropdown"><a href="{{ url('/home') }}">EVENTOS</a></li>--}}
-                        <li class="dropdown"><a href="{{ url('/home') }}">FORUM</a></li>
-                        {{--<li class="dropdown"><a href="{{ url('/home') }}">CONTATO</a></li>--}}
                     </ul>
 
 
@@ -190,19 +196,19 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                {{--<ul class="dropdown-menu" role="menu">--}}
-                                    {{--<li>--}}
-                                        {{--<a href="{{ url('/logout') }}"--}}
-                                            {{--onclick="event.preventDefault();--}}
-                                                     {{--document.getElementById('logout-form').submit();">--}}
-                                            {{--Logout--}}
-                                        {{--</a>--}}
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ url('/logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
 
-                                        {{--<form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">--}}
-                                            {{--{{ csrf_field() }}--}}
-                                        {{--</form>--}}
-                                    {{--</li>--}}
-                                {{--</ul>--}}
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+                                </ul>
                             </li>
                         @endif
                     </ul>
