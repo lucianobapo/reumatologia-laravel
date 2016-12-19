@@ -26,9 +26,7 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
-            'csrfToken' => csrf_token(),
-        ]); ?>
+        window.Laravel = '{{ json_encode([ 'csrfToken' => csrf_token(), ]) }}';
     </script>
     <style>
 
@@ -155,14 +153,19 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li class="dropdown"><a href="{{ route('home') }}">INICIO</a></li>
-                        <li class="dropdown"><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>
-                        <li class="dropdown"><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>
-                        <li class="dropdown"><a href="{{ url('/home') }}">REVISTAS</a></li>
-                        <li class="dropdown"><a href="{{ url('/home') }}">GUIDELINE DE DOENÇAS</a></li>
-                        <li class="dropdown"><a href="{{ url('/home') }}">EVENTOS</a></li>
+                        @foreach(app(\ErpNET\Models\v1\Repositories\PageRepositoryEloquent::class)->all() as $item)
+                            @if($item->ordem>0)
+                                <li class="dropdown"><a href="{{ route('pages.'.$item->rota) }}">{{ $item->nome }}</a></li>
+                            @endif
+                        @endforeach
+{{--                        <li class="dropdown"><a href="{{ route('home') }}">INICIO</a></li>--}}
+{{--                        <li class="dropdown"><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>--}}
+{{--                        <li class="dropdown"><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>--}}
+                        {{--<li class="dropdown"><a href="{{ url('/home') }}">REVISTAS</a></li>--}}
+                        {{--<li class="dropdown"><a href="{{ url('/home') }}">GUIDELINE DE DOENÇAS</a></li>--}}
+                        {{--<li class="dropdown"><a href="{{ url('/home') }}">EVENTOS</a></li>--}}
                         <li class="dropdown"><a href="{{ url('/home') }}">FORUM</a></li>
-                        <li class="dropdown"><a href="{{ url('/home') }}">CONTATO</a></li>
+                        {{--<li class="dropdown"><a href="{{ url('/home') }}">CONTATO</a></li>--}}
                     </ul>
 
 

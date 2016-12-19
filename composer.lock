@@ -1342,12 +1342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucianobapo/erpnet-migrates.git",
-                "reference": "2b166047568c1eeb82a9ea8ae078ef130294ec68"
+                "reference": "87248ee25c6e4ea02bda89f38999358c8bb92901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucianobapo/erpnet-migrates/zipball/2b166047568c1eeb82a9ea8ae078ef130294ec68",
-                "reference": "2b166047568c1eeb82a9ea8ae078ef130294ec68",
+                "url": "https://api.github.com/repos/lucianobapo/erpnet-migrates/zipball/87248ee25c6e4ea02bda89f38999358c8bb92901",
+                "reference": "87248ee25c6e4ea02bda89f38999358c8bb92901",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1369,7 @@
                     "email": "luciano.bapo@gmail.com"
                 }
             ],
-            "time": "2016-12-18 21:29:39"
+            "time": "2016-12-19 05:04:46"
         },
         {
             "name": "ilhanet/erpnet-models",
@@ -1377,12 +1377,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucianobapo/erpnet-models.git",
-                "reference": "b06a2fde159260f08a76bc0abe4df5705ddb2135"
+                "reference": "be3c92162d55cb34372e512aa236a858b7cda748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucianobapo/erpnet-models/zipball/b06a2fde159260f08a76bc0abe4df5705ddb2135",
-                "reference": "b06a2fde159260f08a76bc0abe4df5705ddb2135",
+                "url": "https://api.github.com/repos/lucianobapo/erpnet-models/zipball/be3c92162d55cb34372e512aa236a858b7cda748",
+                "reference": "be3c92162d55cb34372e512aa236a858b7cda748",
                 "shasum": ""
             },
             "require": {
@@ -1407,7 +1407,7 @@
                     "email": "luciano.bapo@gmail.com"
                 }
             ],
-            "time": "2016-12-18 21:17:07"
+            "time": "2016-12-19 06:07:00"
         },
         {
             "name": "ilhanet/erpnet-widget-resource",
@@ -1415,12 +1415,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lucianobapo/erpnet-widget-resource.git",
-                "reference": "63210dfdbc34b086b55d2149f86715a867dd463a"
+                "reference": "a7a4916d836cebe15fc51f9a70726fa93222ed0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lucianobapo/erpnet-widget-resource/zipball/63210dfdbc34b086b55d2149f86715a867dd463a",
-                "reference": "63210dfdbc34b086b55d2149f86715a867dd463a",
+                "url": "https://api.github.com/repos/lucianobapo/erpnet-widget-resource/zipball/a7a4916d836cebe15fc51f9a70726fa93222ed0e",
+                "reference": "a7a4916d836cebe15fc51f9a70726fa93222ed0e",
                 "shasum": ""
             },
             "require": {
@@ -1445,7 +1445,7 @@
                     "email": "luciano.bapo@gmail.com"
                 }
             ],
-            "time": "2016-12-16 04:25:34"
+            "time": "2016-12-19 03:00:38"
         },
         {
             "name": "intervention/image",

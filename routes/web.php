@@ -15,15 +15,20 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/institucional', ['as'=>'institucional', function () {
-    return view('institucional');
-}]);
+    if (Schema::hasTable('pages'))
+        foreach (app(\ErpNET\Models\v1\Repositories\PageRepositoryEloquent::class)->all() as $item) {
+            Route::get($item->rota, ['as'=>'pages.'.$item->rota, function () use ($item) {
+                return view('pages')->with(['pageData'=>$item]);
+            }]);
+        }
+
 
 Route::get('/home', ['as'=>'home', function () {
     return view('home');
 }]);
 
 Route::resource('/post', '\ErpNET\Models\v1\Controllers\PostController');
+Route::resource('/page', '\ErpNET\Models\v1\Controllers\PageController');
 
 Auth::routes();
 
