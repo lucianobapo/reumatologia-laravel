@@ -267,7 +267,7 @@
                     @if (Auth::guest())
                         <a class="btn btn-primary pull-right" style="margin: 5px" href="{{ url('/register') }}">ASSOCIE-SE</a>
                     @endif
-                    <a class="btn btn-default pull-right" style="margin: 5px"  href="{{ url('/login') }}">Área de Sócios</a>
+                    <a class="btn btn-default pull-right" style="margin: 5px"  href="{{ route('pages.membros') }}">Área de Sócios</a>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

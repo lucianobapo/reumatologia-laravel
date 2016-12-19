@@ -17,9 +17,10 @@ Route::get('/', function () {
 
     if (Schema::hasTable('pages'))
         foreach (app(\ErpNET\Models\v1\Repositories\PageRepositoryEloquent::class)->all() as $item) {
-            Route::get($item->rota, ['as'=>'pages.'.$item->rota, function () use ($item) {
-                return view('pages')->with(['pageData'=>$item]);
-            }]);
+            Route::get($item->rota, ['as'=>'pages.'.$item->rota, 'uses'=>'PageController@show']);
+//            Route::get($item->rota, ['as'=>'pages.'.$item->rota, function () use ($item) {
+//                return view('pages')->with(['pageData'=>$item]);
+//            }]);
         }
 
 
@@ -29,6 +30,7 @@ Route::get('/home', ['as'=>'home', function () {
 
 Route::resource('/post', '\ErpNET\Models\v1\Controllers\PostController');
 Route::resource('/page', '\ErpNET\Models\v1\Controllers\PageController');
+Route::resource('/user', '\ErpNET\Models\v1\Controllers\UserController');
 
 Auth::routes();
 
