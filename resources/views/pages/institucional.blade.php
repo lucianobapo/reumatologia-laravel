@@ -259,10 +259,10 @@
     <div class="col-md-10 no-padding lib-item" data-category="view">
         <div class="lib-panel">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <img class="img-rounded img-responsive" src="/img/institucional4.jpg">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="lib-row lib-header">
                         <h2>ESTATUTO DA SOCIEDADE PAULISTA DE REUMATOLOGIA (SPR)</h2>
                         <h3></h3>
@@ -270,18 +270,18 @@
                         <div class="lib-header-seperator"></div>
                     </div>
                     <div class="lib-row lib-desc">
-                        <img src="/img/estatuto_0.png">
-                        <img src="/img/estatuto_1.png">
-                        <img src="/img/estatuto_2.png">
-                        <img src="/img/estatuto_3.png">
-                        <img src="/img/estatuto_4.png">
-                        <img src="/img/estatuto_5.png">
-                        <img src="/img/estatuto_6.png">
-                        <img src="/img/estatuto_7.png">
-                        <img src="/img/estatuto_8.png">
-                        <img src="/img/estatuto_9.png">
-                        <img src="/img/estatuto_10.png">
-                        <img src="/img/estatuto_11.png">
+                        <img class="img-responsive" src="/img/estatuto_0.png">
+                        <img class="img-responsive" src="/img/estatuto_1.png">
+                        <img class="img-responsive" src="/img/estatuto_2.png">
+                        <img class="img-responsive" src="/img/estatuto_3.png">
+                        <img class="img-responsive" src="/img/estatuto_4.png">
+                        <img class="img-responsive" src="/img/estatuto_5.png">
+                        <img class="img-responsive" src="/img/estatuto_6.png">
+                        <img class="img-responsive" src="/img/estatuto_7.png">
+                        <img class="img-responsive" src="/img/estatuto_8.png">
+                        <img class="img-responsive" src="/img/estatuto_9.png">
+                        <img class="img-responsive" src="/img/estatuto_10.png">
+                        <img class="img-responsive" src="/img/estatuto_11.png">
                     </div>
                 </div>
             </div>
