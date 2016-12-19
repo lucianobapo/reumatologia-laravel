@@ -1,26 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title></title>
-	<meta name="generator" content="LibreOffice 5.1.4.2 (Linux)"/>
-	<meta name="author" content="leonardo.hoff"/>
-	<meta name="created" content="2016-03-22T11:25:00"/>
-	<meta name="changedby" content="Leonardo"/>
-	<meta name="changed" content="2016-05-11T00:59:00"/>
-	<meta name="AppVersion" content="15.0000"/>
-	<meta name="DocSecurity" content="0"/>
-	<meta name="HyperlinksChanged" content="false"/>
-	<meta name="LinksUpToDate" content="false"/>
-	<meta name="ScaleCrop" content="false"/>
-	<meta name="ShareDoc" content="false"/>
-	<style type="text/css">
-		@page { margin: 1.27cm }
-		p { margin-bottom: 0.25cm; direction: ltr; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
-		a:link { color: #0000ff }
-	</style>
-</head>
-<body lang="pt-BR" link="#0000ff" dir="ltr">
 <p align="center" style="margin-bottom: 0cm; line-height: 100%"><span style="text-transform: uppercase"><b>Critérios
 de classificação/ diagnóstico, diretrizes (“Guidelines”),
 Recomendações E MÉTRICAS </b></span>
@@ -1581,5 +1558,3 @@ Activity Index </span>
 </p>
 <p style="margin-bottom: 0cm; line-height: 100%">	Índice EULAR de
 atividade da Síndrome de Sjögren.</p>
-</body>
-</html>
