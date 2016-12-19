@@ -1,82 +1,53 @@
 @extends('layouts.app')
 
 @section('content')
-    <style>
-        body {
-            /*padding: 20px;*/
-            /*font-family: 'Open Sans', sans-serif;*/
-            /*background-color: #f7f7f7;*/
-        }
-
-        .lib-panel {
-            /*margin-bottom: 20Px;*/
-        }
-        .lib-panel img {
-            /*width: 100%;*/
-            /*background-color: transparent;*/
-        }
-
-        .lib-panel .row,
-        .lib-panel .col-md-6 {
-            /*padding: 0;*/
-            /*background-color: #FFFFFF;*/
-        }
-
-
-        .lib-panel .lib-row {
-            padding: 0 20px 0 20px;
-        }
-
-        .lib-panel .lib-row.lib-header {
-            /*background-color: #FFFFFF;*/
-            font-size: 20px;
-            padding: 10px 20px 0 20px;
-        }
-
-        .lib-panel .lib-row.lib-header .lib-header-seperator {
-            height: 2px;
-            width: 26px;
-            background-color: #d9d9d9;
-            margin: 7px 0 7px 0;
-        }
-
-        .lib-panel .lib-row.lib-desc {
-            position: relative;
-            height: 100%;
-            display: block;
-            font-size: 13px;
-        }
-        .lib-panel .lib-row.lib-desc a{
-            position: absolute;
-            width: 100%;
-            bottom: 10px;
-            left: 20px;
-        }
-
-        .row-margin-bottom {
-            margin-bottom: 20px;
-        }
-
-        .box-shadow {
-            -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-            box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-        }
-
-        .no-padding {
-            padding: 0;
-        }
-    </style>
 <div class="container">
 
-    <div class="row row-margin-bottom">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" style="height: 300px;">
+            <div class="item active" style="height: 300px;">
+                <img src="/img/slide1.jpg" style="width: 100%">
+                {{--<div style="width: 150px; height: 300px; background-image: url(http://localhost:8008/img/slide1.jpg);"></div>--}}
+
+                <div class="carousel-caption">
+                    <h2>Sociedade Paulista de Reumatologia</h2>
+                    <h2>BEM VINDO AO NOVO SITE</h2>
+                    <h3>Um novo caminho se inicia. Associe-se Agora.</h3>
+                    <button type="button" class="btn btn-primary btn-lg">ASSOCIE-SE</button>
+                    <button type="button" class="btn btn-default btn-lg">ENCONTRE UM REUMATOLOGISTA</button>
+                </div>
+            </div>
+
+            <div class="item" style="height: 300px;">
+                <img src="/img/slide2.jpg" style=" width: 100%">
+                <div class="carousel-caption">
+                    <h2>23º ERA 2017</h2>
+                    <h2>Encontro de Reumatologia Avançada</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="row">
         <div class="col-md-12 text-center">
             <h1>Sociedade Paulista de Reumatologia</h1>
-            <h2>BEM VINDO AO NOVO SITE</h2>
-            <h3>Um novo caminho se inicia. Associe-se Agora.</h3>
-        </div>
-        <div class="col-md-12 text-center">
-            <button type="button" class="btn btn-primary">ASSOCIE-SE</button>
-            <button type="button" class="btn btn-secondary">ENCONTRE UM REUMATOLOGISTA</button>
         </div>
     </div>
 

@@ -11,7 +11,13 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+    {{--<link href="/css/app.css" rel="stylesheet">--}}
+    {{--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--}}
+    {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">--}}
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Scripts -->
     <script>
@@ -19,6 +25,20 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <style>
+
+        .lib-panel .lib-row {
+            padding: 0 20px 0 20px;
+        }
+
+        .lib-panel .lib-row.lib-header .lib-header-seperator {
+            height: 2px;
+            width: 26px;
+            background-color: #d9d9d9;
+            margin: 7px 0 7px 0;
+        }
+
+    </style>
 </head>
 <body>
     <div id="app">
@@ -108,6 +128,8 @@
     </div>
 
     <!-- Scripts -->
-    <script src="/js/app.js"></script>
+    {{--<script src="/js/app.js"></script>--}}
+    {{--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>--}}
+    {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>--}}
 </body>
 </html>

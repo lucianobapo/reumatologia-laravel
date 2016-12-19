@@ -1,62 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-    <style>
 
-        .lib-panel .lib-row {
-            padding: 0 20px 0 20px;
-        }
-
-        .lib-panel .lib-row.lib-header {
-            /*background-color: #FFFFFF;*/
-            font-size: 20px;
-            padding: 10px 20px 0 20px;
-        }
-
-        .lib-panel .lib-row.lib-header .lib-header-seperator {
-            height: 2px;
-            width: 26px;
-            background-color: #d9d9d9;
-            margin: 7px 0 7px 0;
-        }
-
-        .lib-panel .lib-row.lib-desc {
-            position: relative;
-            height: 100%;
-            display: block;
-            font-size: 13px;
-        }
-        .lib-panel .lib-row.lib-desc a{
-            position: absolute;
-            width: 100%;
-            bottom: 10px;
-            left: 20px;
-        }
-
-        .row-margin-bottom {
-            margin-bottom: 20px;
-        }
-
-        .no-padding {
-            padding: 0;
-        }
-    </style>
 <div class="container">
 
 
-    <div class="row row-margin-bottom">
+    <div class="row">
         <div class="col-md-12 text-center">
             <h1>INSTITUCIONAL</h1>
             <h3>Conheça um pouco mais sobre a Sociedade Paulista de Reumatologia</h3>
         </div>
     </div>
 
-    <div class="row row-margin-bottom">
+    <div class="row">
         <div class="col-md-12 no-padding lib-item">
             <div class="lib-panel">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-rounded img-responsive" src="/img/institucional.jpg">
+                        <a href="https://www.youtube.com/embed/trmYumdhrpM" target="_blank">
+                            <img class="img-rounded img-responsive" src="/img/institucional1.jpg">
+                        </a>
+
+                        {{--<iframe width="560" height="315" src="https://www.youtube.com/embed/trmYumdhrpM" frameborder="0" allowfullscreen></iframe>--}}
                     </div>
                     <div class="col-md-6">
                         <div class="lib-row lib-header">
@@ -106,7 +71,7 @@
     </div>
 
 
-    <div class="row row-margin-bottom">
+    <div class="row">
         <div class="col-md-10 no-padding lib-item" data-category="view">
             <div class="lib-panel">
                 <div class="row">
@@ -136,7 +101,7 @@
     </div>
 
 
-    <div class="row row-margin-bottom">
+    <div class="row">
         <div class="col-md-10 no-padding lib-item" data-category="view">
             <div class="lib-panel">
                 <div class="row">
@@ -304,7 +269,7 @@
         </div>
     </div>
 
-    <div class="row row-margin-bottom">
+    <div class="row">
         <div class="col-md-10 no-padding lib-item" data-category="view">
             <div class="lib-panel">
                 <div class="row">
