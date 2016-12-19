@@ -15,6 +15,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
     {{--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">--}}
     {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet">--}}
     {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>--}}
@@ -153,12 +155,6 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="nav navbar-nav navbar-right">
-
                         <li class="dropdown"><a href="{{ route('home') }}">INICIO</a></li>
                         <li class="dropdown"><a href="{{ route('institucional') }}">INSTITUCIONAL</a></li>
                         <li class="dropdown"><a href="{{ url('/home') }}">REUMATOLOGISTAS EM SP</a></li>
@@ -167,11 +163,24 @@
                         <li class="dropdown"><a href="{{ url('/home') }}">EVENTOS</a></li>
                         <li class="dropdown"><a href="{{ url('/home') }}">FORUM</a></li>
                         <li class="dropdown"><a href="{{ url('/home') }}">CONTATO</a></li>
+                    </ul>
+
+
+                    @if (Auth::guest())
+                        <a class="btn btn-primary pull-right" style="margin: 5px" href="{{ url('/register') }}">ASSOCIE-SE</a>
+                    @endif
+                    <a class="btn btn-default pull-right" style="margin: 5px"  href="{{ url('/login') }}">Área de Sócios</a>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+
+
 
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            {{--<li><a href="{{ url('/login') }}">Login</a></li>--}}
-                            {{--<li><a href="{{ url('/register') }}">Register</a></li>--}}
+                            {{--<li><a href="{{ url('/login') }}">Área de Sócios</a></li>--}}
+                            {{--<li><a href="{{ url('/register') }}">ASSOCIE-SE</a></li>--}}
+
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

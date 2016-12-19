@@ -20,8 +20,10 @@
                     <h2>Sociedade Paulista de Reumatologia</h2>
                     <h2>BEM VINDO AO NOVO SITE</h2>
                     <h3>Um novo caminho se inicia. Associe-se Agora.</h3>
-                    <button type="button" class="btn btn-primary btn-lg">ASSOCIE-SE</button>
-                    <button type="button" class="btn btn-default btn-lg">ENCONTRE UM REUMATOLOGISTA</button>
+                    @if (Auth::guest())
+                        <a class="btn btn-primary" href="{{ url('/register') }}">ASSOCIE-SE</a>
+                    @endif
+                    <button type="button" class="btn btn-default">ENCONTRE UM REUMATOLOGISTA</button>
                 </div>
             </div>
 
@@ -36,11 +38,11 @@
 
         <!-- Left and right controls -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="fa fa-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="fa fa-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -147,6 +149,9 @@
                         <div class="lib-row">
                             <p>Como associado da SPR, você tem acesso a conteúdos exclusivos.</p>
                             <button type="button" class="btn btn-secondary">Ir para a Área Exclusiva</button>
+                            @if (Auth::guest())
+                                <a class="btn btn-primary" href="{{ url('/register') }}">ASSOCIE-SE</a>
+                            @endif
                         </div>
                     </div>
                 </div>
