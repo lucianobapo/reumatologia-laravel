@@ -233,8 +233,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand img-responsive" href="{{ url('/') }}" style="width: 130px">
-                        <img src="/img/logo.png" class="img-responsive">
+                    <a class="navbar-brand" href="{{ url('/') }}" style="height: 92px">
+                        <img src="http://concch.com/reumatologia/wp-content/uploads/2016/09/logo2.png" class="" style="width: 163px">
                     </a>
                 </div>
 
@@ -265,9 +265,9 @@
 
 
                     @if (Auth::guest())
-                        <a class="btn btn-primary pull-right" style="margin: 5px" href="{{ url('/register') }}">ASSOCIE-SE</a>
+                        <a class="btn btn-default pull-right" style="border-radius: 2px;margin: 5px;background-color: rgb(221, 221, 221);" href="{{ url('/register') }}">ASSOCIE-SE</a>
                     @endif
-                    <a class="btn btn-default pull-right" style="margin: 5px"  href="{{ route('pages.membros') }}">Área de Sócios</a>
+                    <a class="btn btn-default pull-right" style="border-radius: 2px;margin: 5px;background-color: rgb(221, 221, 221);"  href="{{ route('pages.membros') }}">Área de Sócios</a>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">

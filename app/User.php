@@ -48,7 +48,7 @@ class User extends Authenticatable
 
     public function isAdmin()
     {
-        return true;
+//        return true;
         return (array_search($this->email, explode(',', env('ADMIN_EMAILS', 'luciano.bapo@gmail.com')))!==false);
     }
 }
