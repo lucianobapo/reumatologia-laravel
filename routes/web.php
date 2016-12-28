@@ -12,7 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('home');
+    return redirect('/inicio');
+//    return view('home');
 });
 
     if (Schema::hasTable('pages'))

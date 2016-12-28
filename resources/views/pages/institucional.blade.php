@@ -3,11 +3,11 @@
         <div class="lib-panel">
             <div class="row">
                 <div class="col-md-6">
-                    <a href="https://www.youtube.com/embed/trmYumdhrpM" target="_blank">
-                        <img class="img-rounded img-responsive" src="/img/institucional1.jpg">
-                    </a>
+                    {{--<a href="https://www.youtube.com/embed/trmYumdhrpM" target="_blank">--}}
+                        {{--<img class="img-rounded img-responsive" src="/img/institucional1.jpg">--}}
+                    {{--</a>--}}
 
-                    {{--<iframe width="560" height="315" src="https://www.youtube.com/embed/trmYumdhrpM" frameborder="0" allowfullscreen></iframe>--}}
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/trmYumdhrpM" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6">
                     <div class="lib-row lib-header">

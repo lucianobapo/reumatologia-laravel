@@ -7,8 +7,8 @@
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox" style="height: 300px;">
-        <div class="item active" style="height: 300px;">
+    <div class="carousel-inner" role="listbox" style="height: 350px;">
+        <div class="item active" style="height: 350px;">
             <img src="/img/slide1.jpg" style="width: 100%">
             {{--<div style="width: 150px; height: 300px; background-image: url(http://localhost:8008/img/slide1.jpg);"></div>--}}
 
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <div class="item" style="height: 300px;">
+        <div class="item" style="height: 350px;">
             <img src="/img/slide2.jpg" style=" width: 100%">
             <div class="carousel-caption">
                 <h2>23º ERA 2017</h2>
@@ -44,33 +44,33 @@
 
 <div class="row" style="margin-bottom: 30px">
     <div class="col-md-4 text-center">
-        <div class="circle circle1">
+        <div class="circle circle3">
             <a href="#section_1">
                 <img src="/img/s.png" style="width: 40px">
             </a>
         </div>
-        <h2><a href="{{ route('pages.socio') }}">SÓCIO</a></h2>
-        <h3>Conheça a SPR e nossa história</h3>
+        <h3><a href="{{ route('pages.socio') }}">SÓCIO</a></h3>
+        <h4>Conheça a SPR e nossa história</h4>
     </div>
 
     <div class="col-md-4 text-center">
-        <div class="circle circle1">
+        <div class="circle circle3">
             <a href="#section_1">
                 <img src="/img/p.png" style="width: 40px">
             </a>
         </div>
-        <h2><a href="{{ route('pages.paciente') }}">PACIENTE</a></h2>
-        <h3>Mantenha-se informado</h3>
+        <h3><a href="{{ route('pages.paciente') }}">PACIENTE</a></h3>
+        <h4>Mantenha-se informado</h4>
     </div>
 
     <div class="col-md-4 text-center">
-        <div class="circle circle1">
+        <div class="circle circle3">
             <a href="#section_1">
                 <img src="/img/r.png" style="width: 40px">
             </a>
         </div>
-        <h2><a href="{{ route('pages.reumatologia') }}">REUMATOLOGIA</a></h2>
-        <h3>Conheça os beneficios de associar-se à SPR  </h3>
+        <h3><a href="{{ route('pages.reumatologia') }}">REUMATOLOGIA</a></h3>
+        <h4>Conheça os beneficios de associar-se à SPR  </h4>
     </div>
 </div>
 

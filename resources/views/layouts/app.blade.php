@@ -42,14 +42,7 @@
         }
 
         .circle {
-            margin: 15px;
-            display: inline-block;
-            padding: 16px;
-            text-align: center;
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            border: 2px solid #1d2087;
+
         }
 
         .circle::before,
@@ -72,11 +65,20 @@
         .circle {
             position: relative;
             z-index: 2;
-            background-color: #fff;
-            border: 2px solid #5c5eae;
+            background-color: #00d9d9;
+            border: 2px solid #00fdfd;
             color: #5c5eae;
             line-height: 50px;
             overflow: hidden;
+
+            margin: 15px;
+            display: inline-block;
+            padding: 16px;
+            text-align: center;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            /*border: 2px solid #00d9d9;*/
         }
 
         .circle:hover {
@@ -92,10 +94,11 @@
             transform: scale(.5);
         }
         .circle:hover::after {
-            background: #5c5eae;
+            background: #fff;
             border-radius: 50%;
             -webkit-transform: scale(.9);
             transform: scale(.9);
+            border: 2px solid #5c5eae;
         }
 
         .circle1 {
